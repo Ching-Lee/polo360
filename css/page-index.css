@@ -1,0 +1,367 @@
+/*
+  在这里编辑主页样式表
+ */
+body{
+    background: url(../img/bd-bg.png) repeat-x;
+}
+
+/*
+    解决高度塌陷问题clearfix
+ */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+/*
+固定元素的宽度并居中
+ */
+.w{
+    width:940px;
+    margin: 0 auto;
+
+}
+
+.header{
+
+    /*设置一个上内边距*/
+    padding-top: 37px;
+    /*设置一个下内边距*/
+    padding-bottom: 46px;;
+}
+.logo{
+    margin-left:15px;
+}
+
+/*
+   设置导航条向右浮动
+ */
+.nav{
+    /*向右浮动*/
+    float: right;
+    margin-top: 22px;
+}
+
+.nav li{
+    /*向左浮动*/
+    float:left;
+    /*设置左右内边距 上边0 左右10 下边8*/
+    padding: 0 10px 8px;
+    /*设置左边框*/
+    border-left:1px #d6d6d6 dotted;
+}
+/*设置导航条中的超链接*/
+.nav a{
+    /*设置字体*/
+    font:14px Georgia bold;
+    /*设置字体颜色*/
+    color:#666;
+    /*去除下划线*/
+    text-decoration: none;
+}
+/*设置导航中的小标题
+  在chrome浏览器中最小字体为12px
+*/
+.nav p{
+    /*设置字体颜色*/
+    color: #b7b7b7;
+    /*设置字体*/
+    font:11px tahoma;
+}
+
+.nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+/*设置banner*/
+.banner{
+    /*设置高度*/
+    height:356px;
+    /*设置阴影*/
+    background: url("../img/banner/banner_bg.png") no-repeat bottom center;
+    position: relative;
+}
+
+.pointDiv a{
+    /*设置a浮动*/
+   float: left;
+    /*设置宽度和高度*/
+    width: 17px;
+    height: 17px;
+    margin-left: 4px;
+    background:url("../img/point.png")
+}
+/*设置超链接的hover*/
+.pointDiv .active,.pointDiv a:hover{
+    background:url("../img/point-active.png") ;
+}
+
+.pointDiv{
+    /*开启绝对定位*/
+    position:absolute;
+    /*为导航进行定位*/
+    top: 314px;
+    left: 15px;
+
+}
+
+/*设置content部分*/
+.content h1{
+    /*设置文本居中*/
+    text-align: center;
+    /*设置字体*/
+    font:bold 24px Georgia;
+    /*设置上内边距*/
+    padding: 6px 0 20px 0;
+    /*设置背景*/
+    background: url("../img/content_line.png") no-repeat bottom center;
+    margin-bottom: 38px
+}
+/*
+    中间的三个div
+*/
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co, .contact .nu{
+    /*向左浮动*/
+    float: left;
+    width: 300px;
+
+
+}
+
+.content .cs ,
+.contact .co{
+    margin:0 20px;
+}
+
+/*设置内容区content的标题字体*/
+.content h2{
+    font: 21px  Georgia;
+    color: #11719e;
+}
+.content .p_title{
+   font: 12px Helvetica;
+    color: #9e9e9e;
+}
+.content .imgDiv{
+    width: 299px;
+    height: 184px;;
+    background:url("../img/content_bg.png") no-repeat ;
+    /*设置上下外边距*/
+    margin:16px 0 10px 0 ;
+    /*设置水平居中*/
+    text-align: center;
+    /*设置上内边距*/
+    padding-top: 8px;
+}
+
+/*设置第二个段落*/
+.content .p_words{
+    height: 92px;
+    color: #3e3e3e;
+    font:13px Helvetica;
+    word-spacing: 2px;
+
+}
+
+/*设置按钮样式*/
+.content .lm{
+    /*设置块元素*/
+    display: block;
+    /*设置宽和高*/
+    width: 163px;
+    height: 40px;
+    /*设置背景*/
+    background:url("../img/btn1.png");
+    text-decoration: none;
+    color: #016999;
+    font: 12px/40px Helvetica;
+    /*设置文字的缩进*/
+    text-indent: 1em;
+    /*设置下外边距*/
+    margin-bottom: 35px;
+
+}
+
+
+/*设置联系栏的中间栏*/
+.contact{
+    background: url("../img/content_line.png") no-repeat top;
+}
+
+
+/*设置联系栏中的表单项*/
+.contact .txt{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    background: url("../img/input.png") no-repeat ;
+    /*单独为IE6设置文本框不随文字滚动*/
+    _background-attachment: fixed;
+    /*
+       去除默认边框
+     */
+    border:none;
+    padding: 0 10px;
+    margin:0 0 16px 0;
+}
+
+.contact .tarea{
+    width: 276px;
+    height: 114px;
+    background: url("../img/textarea.png");
+    /*单独为IE6设置文本框不随文字滚动*/
+    _background-attachment: fixed;
+    border:none;
+    /*去除滚动条*/
+    overflow: auto;
+    /*设置文本域不能调整大小*/
+    resize: none;
+    padding: 10px;
+    margin: 0;
+}
+.contact .btn{
+  width: 163px;
+    height: 32px;
+    background: url("../img/btn2.png");
+    border: none;
+    padding: 0;
+    margin: 11px 0 23px 0;
+    /*设置字体*/
+    color: white;
+    font: 13px Georgia;
+    text-align: left;
+    text-indent: 1em;
+    /*设置光标移入效果*/
+    cursor: pointer;
+}
+
+/*
+设置标题
+*/
+.contact h2{
+    color: #444;
+    font:18px/1 georgia;
+    /*
+      设置下边框
+     */
+    border-bottom: 1px dashed #d3d3d3;
+    /*
+       设置上下内边距
+     */
+    padding:44px 0 10px 0;
+    /*设置下外边距*/
+    margin-bottom: 15px;
+}
+
+
+/*设置联系栏的左边栏*/
+.sc .p1{
+    color: #444;
+    font: 12px/1  Helvetica;
+}
+
+/*设置小图标*/
+.sc .icon{
+    /* 设置去除图片之间的空格*/
+    font-size:0 ;
+    /*设置上外边距*/
+    margin-top: 4px;
+}
+
+
+.sc .icon a{
+    margin-right:6px ;
+}
+
+.sc .nl{
+    font: bold 18px/1 "gill sans mt" ;
+    /*设置上内边距*/
+    padding: 34px 0px 10px;
+
+}
+.sc .txt{
+    /*设置输入框*/
+    margin-bottom: 0px;
+    margin-top: 15px;
+    /*给IE6设置*/
+    _margin-top: 19px;
+
+}
+
+/*设置联系栏右侧*/
+.nu img{
+    /*设置向左浮动*/
+    float: left;
+    margin-right:8px;
+}
+/*IE6发现按钮和字一起缩进了，所以这里对其进行处理*/
+.nu .btn{
+    _margin-left: 1em;
+}
+
+.nu p{
+    color: #444;
+    font:12px/1 Helvetica;
+    height: 58px;
+    /*单独给IE6设置*/
+    _height:59px;
+    /*
+     设置下边框
+    */
+    border-bottom: 1px dashed #d3d3d3;
+    margin-bottom: 14px;
+    padding-bottom: 9px;
+}
+
+.nu .no-margin{
+    margin-bottom: 0px;
+}
+
+/*设置底部*/
+.footer{
+    height: 173px;
+    background: #333;
+    border-top: 10px solid #4c4c4c;
+}
+
+/*设置底部文字样式*/
+.footer a,.footer p{
+    color: #999;
+    font: 11px Helvetica;
+    text-decoration: none;
+
+
+
+}
+
+.footer .copy{
+    float: right;
+    margin-left: 0;
+    margin-right: 23px;
+    /*
+     添加一个样式解决ie6的双倍边距问题
+     */
+    display: inline;
+
+}
+
+.footer p{
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+.footer .w{
+    padding-top: 18px ;
+}
+
+
+
+
+
+

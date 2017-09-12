@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POLO360</title>
+    <!--引入reset.css用来清除浏览器的默认样式 -->
+    <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+    <!--引入page-index -->
+    <link rel="stylesheet" type="text/css" href="css/page-index-min.css">
+
+</head>
+<body>
+<!--
+    id class和文件的命名规范
+       --命名时尽量使用英文
+       --命名格式
+           -驼峰命名法：
+                -首字母小写，每个单词开头字母大写
+                例子：helloWorld
+           -也可以所有的子母都小写，单词之间使用_或-链接
+               hello_world
+
+-->
+<!--创建头部div header -->
+<div class="header w">
+    <!--创建一个导航条-->
+    <ul class="nav">
+        <li>
+            <a href="#">HOME</a>
+            <p>Back to home</p>
+        </li>
+        <li>
+            <a href="#">PRODUCTS</a>
+            <p>What we have for you</p>
+        </li>
+        <li>
+            <a href="#">SERVICES</a>
+            <p>Things we do</p>
+        </li>
+        <li>
+            <a href="#">BLOG</a>
+            <p>Follow our updates</p>
+        </li>
+        <li>
+            <a href="#">CONTACT</a>
+            <p>Ways to reach us</p>
+        </li>
+    </ul>
+
+    <!-- 在div中设置logo-->
+    <div class="logo">
+        <a href="#" title="create by lj">
+            <img src="img/logo.png" alt="网站的logo"/>
+        </a>
+    </div>
+
+
+</div>
+
+<!--创建海报div banner  -->
+<div class="banner w">
+    <img src="img/banner/banner01.png" alt="海报图"/>
+    <!--创建div，用于设置导航按钮-->
+    <div class="pointDiv">
+        <a href="#"></a>
+        <a class="active" href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+</div>
+
+<!--创建content内容区-->
+<div class="content w clearfix" >
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+    <!--放置内容的三个div-->
+    <div class="pl">
+        <h2>Perfect Logic</h2>
+        <p class="p_title">All you want your website to do.</p>
+        <!--创建图片div-->
+        <div class="imgDiv">
+            <img src="img/pic/pic1.jpg" alt="小男孩">
+        </div>
+        <p class="p_words">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+
+        <a class="lm" href="#">Learn More</a>
+    </div>
+
+
+
+
+    <div class="cs">
+        <h2>Complete Solution</h2>
+        <p class="p_title">A tool anything and everything you can think.</p>
+        <!--创建图片div-->
+        <div class="imgDiv">
+            <img src="img/pic/pic2.jpg" alt="小女孩">
+        </div>
+        <p class="p_words">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciun tdolore magnam aliquam quaerat voluptatem.
+        </p>
+
+        <a class="lm" href="#">Learn More</a>
+    </div>
+
+
+
+
+    <div class="uc">
+        <h2>Uber Culture</h2>
+        <p class="p_title">Fresh.Modern and ready for future.</p>
+        <!--创建图片div-->
+        <div class="imgDiv">
+            <img src="img/pic/pic3.jpg" alt="大脑图">
+        </div>
+        <p class="p_words">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+
+        <a class="lm" href="#">Learn More</a>
+    </div>
+
+</div>
+
+<!--创建联系栏-->
+<div class="contact w clearfix">
+    <!--联系栏左侧 -->
+    <div class="sc">
+        <h2>Social Connection</h2>
+        <p class="p1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <div class="icon">
+            <a href="#"><img src="img/rss.png"></a>
+            <a href="#"><img src="img/fb.png"></a>
+            <a href="#"><img src="img/in.png"></a>
+            <a href="#"><img src="img/yt.png"></a>
+            <a href="#"><img src="img/tw.png"></a>
+
+        </div>
+        <h2 class="nl">News Letter</h2>
+        <p class="p1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        <form action="#">
+            <!-- 在文本框和文本域中可以通过placeholder设置水印
+                这个属性在IE8及以下浏览器不支持，如果要兼容IE8要使用js
+            -->
+            <input class="txt" type="text" placeholder="your email address">
+            <button class="btn">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- 联系栏中间-->
+    <div class="co">
+         <!-- 创建一个标题-->
+         <h2>Contact</h2>
+        <!--创建一个表单-->
+        <form action="#">
+            <!-- 在文本框和文本域中可以通过placeholder设置水印
+                这个属性在IE8及以下浏览器不支持，如果要兼容IE8要使用js
+            -->
+            <input class="txt" type="text" placeholder="your name"/>
+            <input class="txt" type="text" placeholder="your email address">
+            <textarea class="tarea" placeholder="message"></textarea>
+            <button class="btn">Send it</button>
+        </form>
+    </div>
+
+    <!-- 联系栏右边-->
+    <div class="nu">
+        <h2>News Updates</h2>
+        <p>
+            <img src="img/pic/1.gif"/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+            <img src="img/pic/2.gif"/>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+        <p class="no-margin">
+            <img src="img/pic/3.gif"/>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+        </p>
+        <button class="btn">Visit our Blog</button>
+    </div>
+
+</div>
+
+<!--底部开始 -->
+<div class="footer">
+    <div class="w">
+        <p class="copy">Copyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
+        <p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
+        <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
+    </div>
+</div>
+
+
+
+<!--处理IE6图片透明问题-->
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix("div,img,a,h1");</script>
+<![endif]-->
+
+</body>
+</html>
