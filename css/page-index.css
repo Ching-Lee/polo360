@@ -83,9 +83,32 @@ body{
 .banner{
     /*设置高度*/
     height:356px;
+    width: 960px;
     /*设置阴影*/
     background: url("../img/banner/banner_bg.png") no-repeat bottom center;
     position: relative;
+    /*裁剪溢出的部分*/
+    overflow: hidden;
+}
+.banner img{
+    /*设置图片大小相同*/
+    height: 356px;
+    width: 940px;
+}
+.banner ul{
+    /*一张照片940，5张4700*/
+    /*width:4800px;*/
+    /*为了能够根据li个数多少实时变动宽度，使用javascript*/
+    /*轮播其实就是整个ul向左移动每次移动960px*/
+    position: absolute;
+}
+
+.banner li{
+    /*让图片向左浮动，由竖变横*/
+    float:left;
+    /*让图片左右之间有间隔10px，设置外边距之后要改ul的宽度*/
+    margin: 0 10px;
+
 }
 
 .pointDiv a{
@@ -98,8 +121,9 @@ body{
     background:url("../img/point.png")
 }
 /*设置超链接的hover*/
-.pointDiv .active,.pointDiv a:hover{
+.pointDiv a:hover{
     background:url("../img/point-active.png") ;
+
 }
 
 .pointDiv{
