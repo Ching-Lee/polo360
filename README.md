@@ -1,3 +1,2 @@
 # polo360
-html+css项目polo360网站的实现
-所有源码讲解及相关知识请参考博客：http://lj2012stu.blog.163.com/
+![image](https://github.com/Ching-Lee/polo360/blob/master/POLO360%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E5%9B%BE.png)
