@@ -1,6 +1,6 @@
 
 /**
- * Created by Administrator on 2017/9/22 0022.
+ * Created by ching-Lee
  */
 window.onload=function(){
     /*动态修改所有图片的宽度*/
