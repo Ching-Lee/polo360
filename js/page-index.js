@@ -1,7 +1,3 @@
-
-/**
- * Created by ching-Lee
- */
 window.onload=function(){
     /*动态修改所有图片的宽度*/
     var imgUl=document.getElementById("imgList");
